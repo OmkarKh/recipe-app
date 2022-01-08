@@ -17,7 +17,7 @@ const themeReducer = (state, action) => {
 export function ThemeProvider({ children }) { //children is any component that ThemeProvider wraps around, in our case it's App component
 
     //state is the initial value declared in the useReducer
-    const [state, dispatch] = useReducer(themeReducer, { color: 'tomato', mode: 'dark' }) //second argument is the initial state, in this case it's the color property blue
+    const [state, dispatch] = useReducer(themeReducer, { color: 'tomato', mode: 'light' }) //second argument is the initial state, in this case it's the color property blue
 
     const changeColor = (color) => {
         dispatch({ type: 'CHANGE_COLOR', payload: color })

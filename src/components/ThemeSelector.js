@@ -2,7 +2,7 @@ import './ThemeSelector.css'
 import { useTheme } from '../hooks/useTheme'
 import modeIcon from '../assets/mode-icon.svg'
 
-const themeColors = ['tomato', 'purple', 'green']
+const themeColors = ['tomato', 'blueviolet', 'forestgreen']
 
 export default function ThemeSelector() {
     const { changeColor, changeMode, mode } = useTheme()
